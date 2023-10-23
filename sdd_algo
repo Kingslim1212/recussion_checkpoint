@@ -1,0 +1,15 @@
+FUNCTION Mom(refers) : STRING
+VAR
+    i: INTEGER
+BEGIN
+    IF (i[0] <= 1) THEN
+        write("true")
+    END_IF
+    FOR i FROM 0 TO string.length -1 DO
+    IF (i[0] != string.lenght -1) THEN
+        write("false")
+    ELSE
+    RETURN Mom(i[1], string.length -1)     
+    END_IF    
+    END_FOR     
+END
